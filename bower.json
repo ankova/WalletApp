@@ -1,0 +1,15 @@
+{
+  "name": "wallet-app",
+  "description": "An AngularJS wallet application",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "angular": "1.2.x",
+    "angular-route": "1.2.x",
+    "angular-loader": "1.2.x",
+    "angular-mocks": "~1.2.x",
+    "html5-boilerplate": "~4.3.0",
+    "font-awsome": "~4.2.0",
+    "less": "~2.2.0"
+  }
+}

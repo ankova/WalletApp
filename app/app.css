@@ -1,0 +1,116 @@
+html, body{
+  height: 100%;
+}
+nav {
+  display: inline-block;
+  width: 100%;
+}
+#wrap{
+  width: 95%;
+  margin: auto;
+}
+#navbar-toggle {
+  float: right;
+  background: #1D9B72;
+  color: #FFFFFF;
+  border: solid transparent;
+}
+#navbar-toggle:active {
+  border: solid transparent;
+}
+.menu {
+  display: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: #1D9B72;
+  clear: both;
+}
+.menu li {
+  display: block;
+  padding: 1em;
+}
+.menu li a {
+  color: #C7E7D5;
+}
+.menu li a:hover {
+  color: #FFFFFF;
+}
+.container {
+  position: relative;
+  top: 4em;
+}
+.container div {
+  width: 45%;
+}
+.form-group {
+  width: 45%;
+  float: left;
+}
+.form-group:last-of-type {
+  float: right;
+}
+.form-group input[type="number"]{
+  width: 100%;
+  margin-bottom: 1em;
+}
+.form-group input[type="button"]{
+  float: right;
+  border: solid transparent;
+  background: #1D9B72;
+  border-radius: 4px;
+}
+.form-group input[type="button"]:hover {
+  color: #FFFFFF;
+}
+.added {
+  float: left;
+}
+.removed {
+  float: right;
+}
+.added ul, .removed ul {
+  padding: 0;
+}
+.added ul li, .removed ul li {
+  margin-bottom: 1em;
+  background: #1D9B72;
+  padding: 0.5em 1em;
+  list-style: none;
+}
+.added span, .removed span {
+  float: right;
+}
+.wallet {
+  clear: both;
+  margin: auto;
+  text-align: center;
+}
+.wallet p {
+  background: #1D9B72;
+  padding: 0.5em 1em;
+}
+.error {
+  position: absolute;
+  color: red;
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  #wrap {
+    width: 80%;
+  }
+  #navbar-toggle {
+    display: none;
+  }
+  .menu {
+    display: inline-block !important;
+    padding: 1em;
+  }
+  .menu li {
+    display: block;
+    float: left;
+    width: 33.3%;
+    text-align: center;
+    padding: 0;
+  }
+}
