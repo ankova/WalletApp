@@ -1,0 +1,4 @@
+WalletApp
+=========
+
+Simple wallet application
