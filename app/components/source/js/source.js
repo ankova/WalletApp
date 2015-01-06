@@ -4,7 +4,7 @@ angular.module('viewSource', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/source', {
-    templateUrl: '/source.html',
+    templateUrl: 'components/source/source.html',
     controller: 'SourceCtrl'
   });
 }])
