@@ -4,9 +4,9 @@
         <fieldset class="form-group">
             <input name="add" type="number" min="0" required ng-model="addAmmount" />
             <input type="button" value="Add" ng-disabled="form.add.$invalid" ng-click="vm.add(addAmmount)" />
-          <span class="error" ng-show="form.add.$error.number || form.add.$error.min">
+            <span class="error" ng-show="form.add.$error.number || form.add.$error.min">
             Please enter valid number!
-          </span>
+            </span>
         </fieldset>
         <fieldset class="form-group">
             <input name="remove" type="number" min="0" max="{{vm.total}}" required ng-model="removeAmmount" />

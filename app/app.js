@@ -11,7 +11,7 @@ angular.module('walletApp', [
             .when("/home",
             {
                 controller:"walletCtrl",
-                templateUrl: "home/home.html"
+                templateUrl: "components/home/home.html"
             })
             .otherwise({redirectTo: '/home'});
     }])
@@ -32,7 +32,7 @@ angular.module('walletApp', [
             controller: function(){
 
             },
-            templateUrl: "home/items.html",
+            templateUrl: "components/home/templates/items.html",
             replace: true
         };
     });
