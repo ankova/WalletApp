@@ -11,22 +11,22 @@
         <fieldset class="form-group">
             <input name="remove" type="number" min="0" max="{{vm.total}}" required ng-model="removeAmmount" />
             <input type="button" value="Remove" ng-disabled="form.remove.$invalid || removeAmmount > vm.total" ng-click="vm.remove(removeAmmount)" />
-          <span class="error" ng-show="form.remove.$error.number || form.remove.$error.min || form.remove.$error.max">
-            Please enter valid number!
-          </span>
+            <span class="error" ng-show="form.remove.$error.number || form.remove.$error.min || form.remove.$error.max">
+                Please enter valid number!
+            </span>
         </fieldset>
     </form>
 
     <div class="added">
         <h3>Added</h3>
-        <ul>
-            <li ng-repeat="item in vm.added track by $index">{{item.value | currency: "£"}}<span>{{item.date | date:"dd/MM/yyyy 'at' h:mma"}}</span></li>
+        <ul ng-repeat="item in vm.added track by $index">
+            <li item></li>
         </ul>
     </div>
     <div class="removed">
         <h3>Removed</h3>
-        <ul>
-            <li ng-repeat="item in vm.removed track by $index">{{item.value | currency: "£"}}<span>{{item.date | date:"dd/MM/yyyy 'at' h:mma"}}</span></li>
+        <ul ng-repeat="item in vm.removed track by $index">
+            <li item></li>
         </ul>
     </div>
     <div class="wallet">

@@ -25,4 +25,14 @@ angular.module('walletApp', [
             reset: reset
         };
         return $scope;
-    }]);
+    }])
+    .directive('item', function(){
+        return {
+            restricted: "EA",
+            controller: function(){
+
+            },
+            templateUrl: "home/items.html",
+            replace: true
+        };
+    });
